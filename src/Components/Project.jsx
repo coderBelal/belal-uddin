@@ -272,7 +272,7 @@ const Project = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out  object-cover rounded-lg shadow-lg mb-6"
+                  className="w-full  lg:filter lg:grayscale lg:hover:grayscale-0 transition-all duration-300 ease-in-out  object-cover rounded-lg shadow-lg mb-6"
                 />
                 <h2 className="text-2xl font-semibold mb-3 text-gray-600">{project.title}</h2>
                 <p className="text-gray-500 mb-6 text-center">{project.description}</p>

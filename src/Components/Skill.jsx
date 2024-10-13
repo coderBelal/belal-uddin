@@ -35,7 +35,7 @@ const Skill = () => {
           <img
             src={skill.img}
             alt={skill.title}
-            className="h-24 w-24 filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out  rounded-lg mb-4"
+            className="h-24 w-24 lg:filter lg:grayscale lg:hover:grayscale-0 transition-all duration-300 ease-in-out  rounded-lg mb-4"
           />
           <h2 className="text-xl font-semibold  text-gray-500 ">
             {skill.title}
@@ -63,7 +63,7 @@ const Skill = () => {
           <img
             src={skill.img}
             alt={skill.title}
-            className="h-24 w-24 rounded-lg filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out  mb-4"
+            className="h-24 w-24 rounded-lg  lg:filter lg:grayscale lg:hover:grayscale-0 transition-all duration-300 ease-in-out  mb-4"
           />
           <h2 className="text-xl font-semibold   text-gray-600">
             {skill.title}

@@ -49,7 +49,7 @@ const Hero = () => {
           <a
             href= {cv}
             className=" bg-slate-100 font-semibold  text-black px-6 py-3 rounded-full hover:bg-slate-400  transition-colors"
-            download
+            download="Belal-CV.pdf"
           >
         
             Download CV
