@@ -34,8 +34,8 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen flex items-center justify-center    px-4">
-      <div className="max-w-5xl w-full bg-gray-900 p-8 rounded-lg shadow-lg">
-        <h2 className="text-3xl font-bold text-[#10E956] text-center mb-8">
+      <div className="max-w-5xl w-full  bg-[#0A0A0A] p-8 rounded-lg shadow-lg">
+        <h2 className="text-3xl font-bold  text-gray-600 text-center mb-8">
           Get in Touch
         </h2>
         <form onSubmit={onSubmit} className="space-y-6">
@@ -49,7 +49,7 @@ export default function Contact() {
                 name="name"
                 placeholder="Your Name"
                 required
-                className="w-full px-4 py-2 bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#10E956] focus:border-transparent"
+                className="w-full px-4 py-2 bg-gray-400 text-gray-300 border border-gray-600 rounded-lg    "
               />
             </div>
             <div>
@@ -61,7 +61,7 @@ export default function Contact() {
                 name="email"
                 placeholder="Your Email"
                 required
-                className="w-full px-4 py-2 bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#10E956] focus:border-transparent"
+                className="w-full px-4 py-2 bg-gray-400 text-gray-300 border border-gray-600 rounded-lg   "
               />
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Contact() {
                 name="contact"
                 placeholder="Contact Number"
                 required
-                className="w-full px-4 py-2 bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#10E956] focus:border-transparent"
+                className="w-full px-4 py-2 bg-gray-400 text-gray-300 border border-gray-600 rounded-lg"
               />
             </div>
             <div>
@@ -87,7 +87,7 @@ export default function Contact() {
                 name="subject"
                 placeholder="Subject"
                 required
-                className="w-full px-4 py-2 bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#10E956] focus:border-transparent"
+                className="w-full px-4 py-2 bg-gray-400 text-gray-300 border border-gray-600 rounded-lg focus:outline-none   "
               />
             </div>
           </div>
@@ -99,12 +99,12 @@ export default function Contact() {
               name="message"
               placeholder="Write your message"
               required
-              className="w-full h-40 px-4 py-2 bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#10E956] focus:border-transparent"
+              className="w-full h-40 px-4 py-2 bg-gray-400 text-gray-300 border border-gray-600 rounded-lg focus:outline-none  "
             ></textarea>
           </div>
           <button
             type="submit"
-            className="flex items-center bg-[#10E956] text-white px-6 py-2 rounded-lg hover:bg-[#0cc04b] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#10E956] focus:ring-opacity-50"
+            className="flex items-center  bg-slate-100  hover:bg-slate-400   px-6 py-2 rounded-lg  transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#10E956] focus:ring-opacity-50"
           >
             <FaPaperPlane className="mr-2" /> SUBMIT
           </button>

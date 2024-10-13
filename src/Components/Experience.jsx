@@ -25,27 +25,27 @@ const Experience = () => {
   return (
     <section className="py-16  text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-[#10E956]">
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-600">
           Experience
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+              className="p-8  bg-[#0A0A0A] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
             >
               <div className="flex items-center mb-4">
-                <FaBriefcase className="text-[#10E956] text-3xl mr-4" />
+                <FaBriefcase className=" text-gray-400 text-3xl mr-4" />
                 <div>
-                  <h3 className="text-2xl font-semibold text-[#10E956]">
+                  <h3 className="text-2xl font-semibold   text-gray-600">
                     {exp.company}
                   </h3>
-                  <p className="text-lg text-[#10E956]">{exp.role}</p>
+                  <p className="text-lg  text-gray-600">{exp.role}</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-2">{exp.location}</p>
-              <p className="text-gray-500 mb-6">{exp.duration}</p>
-              <p className="text-gray-300 leading-relaxed">{exp.description}</p>
+              <p className="text-gray-600 mb-6">{exp.duration}</p>
+              <p className=" text-gray-500 leading-relaxed">{exp.description}</p>
             </div>
           ))}
         </div>

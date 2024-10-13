@@ -5,7 +5,7 @@ import { FaHome, FaStar, FaClipboardList, FaCertificate, FaPhoneAlt } from 'reac
 const Navbar = () => {
   return (
     <div>
-      <nav className="p-6 h-16 flex items-center justify-center bg-[#10E956] text-white  fixed top-6 left-1/2 transform -translate-x-1/2 mx-auto max-w-fit rounded-xl z-50">
+      <nav className="p-6 h-16 flex items-center justify-center bg-[#0A0A0A]   text-gray-300 fixed top-6 left-1/2 transform -translate-x-1/2 mx-auto max-w-fit rounded-xl z-50">
         {/* Navbar Links */}
         <ul className="flex space-x-8">
           <li className="flex items-center">
@@ -55,4 +55,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

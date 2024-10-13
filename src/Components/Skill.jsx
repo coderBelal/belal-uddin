@@ -22,24 +22,22 @@ const otherSkills = [
 const Skill = () => {
   return (
     <div className="max-w-7xl mx-auto text-center mt-10  ">
-    <h1 className="text-4xl font-bold mb-10 text-white">
-      Skills <span className="text-[#10E956]">Front End</span>
+    <h1 className="text-4xl font-bold mb-10  text-gray-600">
+      Skills <span className=" text-gray-600 ">Front End</span>
     </h1>
     <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center p-4">
       {skills.map((skill, index) => (
         <div
           key={index}
-          className="flex flex-col items-center shadow-2xl rounded-lg p-6"
-          style={{
-            boxShadow: 'inset 0 4px 8px 0 rgba(16, 233, 86, 0.6)', // Custom inset box shadow
-          }}
+          className="flex bg-[#0A0A0A] flex-col items-center shadow-2xl rounded-lg p-6"
+        
         >
           <img
             src={skill.img}
             alt={skill.title}
-            className="h-24 w-24 rounded-lg mb-4"
+            className="h-24 w-24 filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out  rounded-lg mb-4"
           />
-          <h2 className="text-xl font-semibold text-[#10E956]">
+          <h2 className="text-xl font-semibold  text-gray-500 ">
             {skill.title}
           </h2>
           {skill.status && (
@@ -51,24 +49,23 @@ const Skill = () => {
       ))}
     </div>
 
-    <h1 className="text-4xl font-bold my-10 text-white">
-      <span className="text-[#10E956]">Other</span> Skills
+    <h1 className="text-4xl font-bold my-10   text-gray-600">
+      <span  >Other</span> Skills
     </h1>
     <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 m-4 gap-10 justify-center">
       {otherSkills.map((skill, index) => (
         <div
           key={index}
-          className="flex flex-col items-center shadow-2xl rounded-lg p-6"
-          style={{
-            boxShadow: 'inset 0 4px 8px 0 rgba(16, 233, 86, 0.6)', // Custom inset box shadow
-          }}
+          className="flex bg-[#0A0A0A]  flex-col items-center shadow-2xl rounded-lg p-6"
+       
+          
         >
           <img
             src={skill.img}
             alt={skill.title}
-            className="h-24 w-24 rounded-lg mb-4"
+            className="h-24 w-24 rounded-lg filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out  mb-4"
           />
-          <h2 className="text-xl font-semibold text-[#10E956]">
+          <h2 className="text-xl font-semibold   text-gray-600">
             {skill.title}
           </h2>
         </div>
