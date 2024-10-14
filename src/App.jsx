@@ -10,7 +10,6 @@ import Project from "./Components/Project";
 import Contact from "./Components/Contact";
 import Certificate from "./Components/Certificate";
 import Skill from "./Components/Skill";
-import ParticlesComponent from "./Components/particles";
 
 function App() {
   const location = useLocation();
@@ -33,7 +32,6 @@ function App() {
       ) : (
         <>
           <Navbar />
-          <ParticlesComponent/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
