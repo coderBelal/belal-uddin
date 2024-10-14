@@ -1,15 +1,10 @@
  /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", // Adjust according to your file extensions
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        'press-start': ['"Press Start 1P"', 'cursive'],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
