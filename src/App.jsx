@@ -8,7 +8,7 @@ import SocialLinks from "./Components/SocialLinks";
 import Loading from "./Components/Loading";  
 import Project from "./Components/Project";
 import Contact from "./Components/Contact";
-import Certificate from "./Components/Certificate";
+ 
 import Skill from "./Components/Skill";
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
             <Route path="/work" element={<Project/>}  />
             <Route path="/skill" element={<Skill/>}  />
             <Route path="/contact" element={<Contact/>}  />
-            <Route path="/certificate" element={<Certificate/>}  />
+            {/* <Route path="/certificate" element={<Certificate/>}  /> */}
           </Routes>
           <SocialLinks />
         </>

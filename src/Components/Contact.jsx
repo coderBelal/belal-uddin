@@ -33,8 +33,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center    px-4">
-      <div className="max-w-5xl w-full  bg-[#0A0A0A] p-8 rounded-lg shadow-lg">
+    <div className="min-h-screen mt-28 flex items-center justify-center    px-4">
+      <div className="max-w-5xl w-full  daek:bg-[#0A0A0A] p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold  text-gray-600 text-center mb-8">
           Get in Touch
         </h2>

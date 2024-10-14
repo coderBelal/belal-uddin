@@ -18,7 +18,7 @@ const SocialLinks = () => {
           href="https://www.linkedin.com/in/belal-uddin-99733229a/"
           target="_blank"
           rel="noopener noreferrer"
-          className=" bg-slate-800 w-full md:w-48 h-24 flex justify-center items-center rounded-lg hover:bg-gray-700   transition duration-300 shadow-lg"
+          className=" bg-blue-600 dark:bg-slate-800 w-full md:w-48 h-24 flex justify-center items-center rounded-lg dark:hover:bg-gray-700   transition duration-300 shadow-lg"
         >
           <FaLinkedin size={40} className="text-white mr-2" />
           <span className="text-white text-2xl font-semibold">LinkedIn</span>
@@ -29,7 +29,7 @@ const SocialLinks = () => {
           onClick={() => window.open('https://wa.me/+8801568885065', '_blank')}
           target="_blank"
           rel="noopener noreferrer"
-          className=" bg-slate-800 w-full md:w-48 h-24 flex justify-center items-center rounded-lg hover:bg-gray-700   transition duration-300 shadow-lg"
+          className="bg-[#10E956] dark:bg-slate-800 w-full md:w-48 h-24 flex justify-center items-center rounded-lg dark:hover:bg-gray-700   transition duration-300 shadow-lg"
         >
           <FaWhatsapp size={40} className="text-white mr-2" />
           <span className="text-white text-2xl font-semibold">WhatsApp</span>
@@ -39,7 +39,7 @@ const SocialLinks = () => {
           href="https://www.facebook.com/devbelal10/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-slate-800 w-full md:w-48 h-24 flex justify-center items-center rounded-lg hover:bg-gray-700   transition duration-300 shadow-lg"
+          className="bg-sky-500 dark:bg-slate-800 w-full md:w-48 h-24 flex justify-center items-center rounded-lg dark:hover:bg-gray-700   transition duration-300 shadow-lg"
         >
           <FaFacebook size={40} className="text-white mr-2" />
           <span className="text-white text-2xl font-semibold">Facebook</span>
