@@ -73,12 +73,12 @@ const Project = () => {
   const projectsToShow = selectedCategory === 'myWork' ? myProjects : teamProjects;
 
   return (
-    <div className="w-full mx-auto py-12 px-4 pt-16 mt-20 md:px-8">
-      <h1 className=" text-[#10E956] dark:text-gray-600  font-semibold text-4xl text-center mb-10 tracking-wide">My Work</h1>
+    <div className="w-full mx-auto py-12 px-4 pt-16 md:px-8">
+      <h1 className="text-gray-600 text-4xl font-semibold text-center mb-10 tracking-wide">My Work</h1>
       
       <div className="flex justify-center mb-8 space-x-4">
         <button
-          className={`px-6 py-3 font-bold cursor-pointer rounded-full ${
+          className={`px-6 py-3 font-bold rounded-full ${
             selectedCategory === 'myWork' ? 'bg-slate-100' : 'bg-gray-400 text-white'
           } hover:bg-slate-400 transition-all duration-300 ease-in-out shadow-md`}
           onClick={() => handleCategoryChange('myWork')}
@@ -86,7 +86,7 @@ const Project = () => {
           My Work
         </button>
         <button
-          className={`px-6 py-3 font-bold cursor-pointer rounded-full ${
+          className={`px-6 py-3 font-bold rounded-full ${
             selectedCategory === 'teamWork' ? 'bg-slate-100 text-gray-900' : 'bg-gray-700 text-white'
           } hover:bg-slate-400 transition-all duration-300 ease-in-out shadow-md`}
           onClick={() => handleCategoryChange('teamWork')}
@@ -123,14 +123,14 @@ const Project = () => {
         >
           {projectsToShow.map((project, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-center dark:bg-[#0A0A0A] text-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-out">
+              <div className="flex flex-col items-center bg-[#0A0A0A] text-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-out">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full  dark:lg:filter dark:lg:grayscale dark:lg:hover:grayscale-0 transition-all duration-300 ease-in-out  object-cover rounded-lg shadow-lg mb-6"
+                  className="w-full  lg:filter lg:grayscale lg:hover:grayscale-0 transition-all duration-300 ease-in-out  object-cover rounded-lg shadow-lg mb-6"
                 />
-                <h2 className="text-2xl font-semibold mb-3 text-[#10E956] dark:text-gray-600">{project.title}</h2>
-                <p className="dark:text-gray-500 mb-6 text-center">{project.description}</p>
+                <h2 className="text-2xl font-semibold mb-3 text-gray-600">{project.title}</h2>
+                <p className="text-gray-500 mb-6 text-center">{project.description}</p>
                 <div className="flex space-x-6 mb-4">
                   <a
                     href={project.liveLink}
@@ -144,7 +144,7 @@ const Project = () => {
                     href={project.codeLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3  bg-gray-300 font-bold text-black rounded-full hover:bg-gray-900 transition-all duration-300 ease-in-out shadow-md transform hover:scale-105"
+                    className="px-6 py-3 bg-gray-300 font-bold text-black rounded-full hover:bg-gray-900 transition-all duration-300 ease-in-out shadow-md transform hover:scale-105"
                   >
                     Code
                   </a>
@@ -152,7 +152,7 @@ const Project = () => {
                 <button className="px-6 py-2 bg-gray-900 text-white rounded-full hover:bg-blue-500 transition-all duration-300 ease-in-out shadow-md transform hover:scale-105">
                   Technologies Used
                 </button>
-                <ul className="mt-4 flex gap-3 bg-[#10E956] dark:bg-slate-600 py-2 px-2 rounded-lg">
+                <ul className="mt-4 flex gap-3 bg-slate-600 py-2 px-2 rounded-lg">
                   {project.technologies.map((tech, idx) => (
                     <li key={idx} className="text-center">{tech}</li>
                   ))}

@@ -10,6 +10,8 @@ import Project from "./Components/Project";
 import Contact from "./Components/Contact";
  
 import Skill from "./Components/Skill";
+ 
+ 
 
 function App() {
   const location = useLocation();
@@ -32,6 +34,7 @@ function App() {
       ) : (
         <>
           <Navbar />
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

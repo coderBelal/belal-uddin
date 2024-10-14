@@ -3,8 +3,8 @@ import belal from  "../assets/b3.jpg"
 const About = () => {
   return (
     <section className="max-w-7xl mx-auto py-16 px-4   ">
-      <h2 className="text-3xl text-center font-bold text-green-500  dark:text-gray-600 mb-4">ABOUT ME</h2>
-      <p className="  text-white dark:text-gray-600 text-center mb-8">
+      <h2 className="text-3xl text-center font-semibold   text-gray-600 mb-4">ABOUT ME</h2>
+      <p className=" text-gray-600 text-center mb-8">
         As a front-end developer, I thrive on turning complex design concepts
         into functional, aesthetically pleasing web pages. My attention to
         detail and commitment to user-centric design ensure that every project I
@@ -15,12 +15,12 @@ const About = () => {
           <img
             src=  {belal}
             alt="Profile"
-            className="w-full rounded-lg transition-transform  dark:filter dark:grayscale dark:hover:grayscale-0 duration-100 ease-in  hover:scale-90 hover:rotate-6"
+            className="w-full rounded-lg transition-transform filter grayscale hover:grayscale-0 duration-100 ease-in  hover:scale-90 hover:rotate-6"
           />
         </div>
         <div className="flex-1 min-w-[300px]">
-          <h3 className="text-xl text-white  dark:text-gray-500 mb-4">Front End Developer</h3>
-          <p className="   text-slate-100 dark:text-gray-600 mb-6">
+          <h3 className="text-xl  text-gray-500 mb-4">Front End Developer</h3>
+          <p className=" text-gray-600 mb-6">
             I am a dedicated front-end developer with a passion for crafting
             intuitive and dynamic user interfaces. My expertise lies in
             translating design mockups into seamless, responsive websites that
@@ -60,7 +60,7 @@ const About = () => {
               <span className=" text-gray-600">Male</span>
             </div>
           </div>
-          <p className= " text-white dark:text-gray-600 mt-6">
+          <p className="text-gray-600 mt-6">
             Proficient in HTML, CSS, and JavaScript, I excel at creating
             interactive and engaging web applications. I continually stay
             updated with the latest industry trends and technologies, ensuring
