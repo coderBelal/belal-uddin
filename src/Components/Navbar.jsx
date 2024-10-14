@@ -32,14 +32,14 @@ const Navbar = () => {
               <FaClipboardList className="text-lg" />
             </Link>
           </li>
-          <li className="flex items-center">
+{/*           <li className="flex items-center">
             <Link to="/certificate" className="hidden md:flex text-lg">
               Certificate
             </Link>
             <Link to="/certificate" className="md:hidden">
               <FaCertificate className="text-lg" />
             </Link>
-          </li>
+          </li> */}
           <li className="flex items-center">
             <Link to="/contact" className="hidden md:flex text-lg">
               Contact
