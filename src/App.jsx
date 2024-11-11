@@ -1,60 +1,45 @@
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
-
-import Navbar from "./Components/Navbar";
-import Home from "./Home/Home";
-import About from "./Components/About";
-import SocialLinks from "./Components/SocialLinks";
-import Loading from "./Components/Loading";  
-import Project from "./Components/Project";
-import Contact from "./Components/Contact";
  
-import Skill from "./Components/Skill";
+import { useEffect } from "react"
+import About from "./components/about/About"
+import Contact from "./components/contact/Contact"
+import Experience from "./components/Experience/Experience"
+import Home from "./components/hero/Home"
+import Navbar from "./components/Navbar/Navbar"
+import Project from "./components/Project/Project"
+import Skill from "./components/Skill/Skill"
+import SocialLinks from "./components/SocialLinks/SocialLinks"
+import { ThemeProvider } from "./context/ThemeContext"
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
  
  
-
-function App() {
-  const location = useLocation();
-  const [loading, setLoading] = useState(false);
-
+ const App = () => {
   useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+   return (
+  
+
    
-    setLoading(true);
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000); 
-
-    return () => clearTimeout(timer);  
-  }, [location]);
-
-  return (
-    <div>
-      {loading ? (
-        <Loading />  
-      ) : (
-        <>
-          <Navbar />
-          
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/work" element={<Project/>}  />
-            <Route path="/skill" element={<Skill/>}  />
-            <Route path="/contact" element={<Contact/>}  />
-            {/* <Route path="/certificate" element={<Certificate/>}  /> */}
-          </Routes>
-          <SocialLinks />
-        </>
-      )}
-    </div>
-  );
-}
-
+   <ThemeProvider>
+      <div className=" overflow-x-hidden">
+ <Navbar/>
+  <Home/>
+  <About/>
+  <Experience/>
+  <Project/>
+  <Skill/>
+  <Contact/>
+  <SocialLinks/>
+  </div>
+   </ThemeProvider>
  
-export default function AppWrapper() {
-  return (
-    <Router>
-      <App />
-    </Router>
-  );
-}
+ 
+   )
+ }
+ 
+ export default App
+ 

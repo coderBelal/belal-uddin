@@ -1,15 +1,15 @@
  /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode:'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        'press-start': ['"Press Start 1P"', 'cursive'],
-      },
+    extend: {},
+    fontFamily: {
+      sora: ['Sora', 'sans-serif'], // Add the Sora font
     },
   },
   plugins: [],
-};
+}
