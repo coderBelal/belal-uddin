@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -13,24 +14,50 @@ const Navbar = () => {
         <div className="text-purple-600 text-2xl md:text-xl font-bold">BELAL UDDIN</div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6 items-center z-50">
-          {['Home', 'Works',   'Skills',   'Contact'].map((item) => (
-            <button
-              key={item}
+        <ul className="hidden md:flex space-x-6 items-center z-50">
+          <li>
+            <Link
+              to="/"
               className="text-[#513F73] text-base font-semibold hover:border-b-2 border-purple-600 dark:text-white hover:text-purple-600"
             >
-              {item}
-            </button>
-          ))}
-          <a   onClick={() => window.open('https://wa.me/+8801568885065', '_blank')}
-          target="_blank"
-          rel="noopener noreferrer">
-                <button className="px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-purple-800 rounded-full dark:bg-gradient-to-r dark:from-purple-800 dark:to-purple-900">
-            Hire me!
-          </button>
-          </a>
-      
-
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/works"
+              className="text-[#513F73] text-base font-semibold hover:border-b-2 border-purple-600 dark:text-white hover:text-purple-600"
+            >
+              Works
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/skills"
+              className="text-[#513F73] text-base font-semibold hover:border-b-2 border-purple-600 dark:text-white hover:text-purple-600"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="text-[#513F73] text-base font-semibold hover:border-b-2 border-purple-600 dark:text-white hover:text-purple-600"
+            >
+              Contact
+            </Link>
+          </li>
+          <li>
+            <a
+              onClick={() => window.open('https://wa.me/+8801568885065', '_blank')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-purple-800 rounded-full dark:bg-gradient-to-r dark:from-purple-800 dark:to-purple-900">
+                Hire me!
+              </button>
+            </a>
+          </li>
           {/* Toggle Switch */}
           <div className="flex items-center space-x-2">
             <span className="text-[#513F73] dark:text-white text-base font-semibold">
@@ -50,7 +77,7 @@ const Navbar = () => {
               </div>
             </label>
           </div>
-        </div>
+        </ul>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden z-50">
@@ -65,19 +92,52 @@ const Navbar = () => {
           ${isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"} 
           duration-300 ease-in-out z-40`}
         >
-          { ['Home', 'Works',   'Skills',   'Contact'].map((item) => (
-            <button key={item} className="text-[#513F73] text-lg font-semibold hover:text-purple-600 dark:text-white">
-              {item}
+          <li>
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className="text-[#513F73] text-lg font-semibold hover:text-purple-600 dark:text-white"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/works"
+              onClick={() => setIsOpen(false)}
+              className="text-[#513F73] text-lg font-semibold hover:text-purple-600 dark:text-white"
+            >
+              Works
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/skills"
+              onClick={() => setIsOpen(false)}
+              className="text-[#513F73] text-lg font-semibold hover:text-purple-600 dark:text-white"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className="text-[#513F73] text-lg font-semibold hover:text-purple-600 dark:text-white"
+            >
+              Contact
+            </Link>
+          </li>
+          <a
+            onClick={() => window.open('https://wa.me/+8801568885065', '_blank')}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-purple-800 rounded-full dark:bg-gradient-to-r dark:from-purple-800 dark:to-purple-900">
+              Hire me!
             </button>
-          ))}
-          <a   onClick={() => window.open('https://wa.me/+8801568885065', '_blank')}
-          target="_blank"
-          rel="noopener noreferrer">
-                <button className="px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-purple-800 rounded-full dark:bg-gradient-to-r dark:from-purple-800 dark:to-purple-900">
-            Hire me!
-          </button>
           </a>
-      
+          {/* Toggle Switch */}
           <label className="flex items-center space-x-2">
             <span className="text-[#513F73] dark:text-white text-lg font-semibold">
               {theme === "light" ? "Light" : "Dark"}

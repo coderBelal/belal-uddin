@@ -1,19 +1,22 @@
-import Contact from "../Components/Contact"
-import Hero from "../Components/Hero"
-import Project from "../Components/Project"
-import Skill from "../Components/Skill"
- import About from "../Components/About"
-import Experience from "../Components/Experience"
+import About from "../components/about/About"
+import Contact from "../components/contact/Contact"
+import Experience from "../components/Experience/Experience"
+import Hero from "../components/hero/Hero"
+import Project from "../components/Project/Project"
+import Skill from "../components/Skill/Skill"
+ 
+ 
 
 const Home = () => {
   return (
-    <div>
-<Hero/>
- <About/>
+    <div> 
+      <Hero/>
+  <About/>
  <Experience/>
- <Skill/>
  <Project/>
+ <Skill/>
  <Contact/>
+  
     </div>
   )
 }
