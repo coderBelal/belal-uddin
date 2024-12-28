@@ -39,12 +39,20 @@ const myProjects = [
 const teamProjects = [
   {
     title: 'Spaajman',
-    description: 'A luxury spa and wellness platform with booking features, built with modern web technologies.',
+    description: 'A comprehensive platform designed for luxury spa and wellness services, featuring online appointment booking, user profiles, and service management.',
     image: 'https://i.postimg.cc/dQyM7WyP/Screenshot-2024-09-30-000210.png',
     liveLink: 'https://sparlax.com/',
     technologies: ['Node.js', 'Express', 'MongoDB', 'React'],
   },
+  {
+    title: 'Relifemart',
+    description: 'An e-commerce platform focused on wellness and lifestyle products, with advanced search functionality, secure payment integration, and responsive design.',
+    image: 'https://i.postimg.cc/zBFTsb30/Screenshot-from-2024-12-28-10-03-30.png',
+    liveLink: 'https://relifemart.com/',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'React'],
+  },
 ];
+
 
 const Project = () => {
   const [activeTab, setActiveTab] = useState('myProjects'); // State to track the active tab

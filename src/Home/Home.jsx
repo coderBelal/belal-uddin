@@ -1,7 +1,8 @@
 import About from "../components/about/About"
 import Contact from "../components/contact/Contact"
 import Experience from "../components/Experience/Experience"
-import Hero from "../components/hero/Hero"
+import Hero from "../components/hero/Home"
+ 
 import Project from "../components/Project/Project"
 import Skill from "../components/Skill/Skill"
  
@@ -10,7 +11,7 @@ import Skill from "../components/Skill/Skill"
 const Home = () => {
   return (
     <div> 
-      <Hero/>
+    <Hero/>
   <About/>
  <Experience/>
  <Project/>

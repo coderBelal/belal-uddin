@@ -8,14 +8,18 @@ const skills = [
   { title: "React", img: "https://i.postimg.cc/T3JsJ140/redux.png" },
   { title: "Redux", img: "https://i.postimg.cc/SsJt4rN1/redux-B2yjgmpq.png" },
   { title: "Zustand", img: "https://i.postimg.cc/kGn2W6qV/zustand.png" },
+  { title: "Tanstack Query", img: "https://i.postimg.cc/wMDn8kLn/tanstack-query-websockets.webp" },
   { title: "Next JS", img: "https://i.postimg.cc/gkRQrNyf/next.png" },
+  { title: "Framer Motion", img: "https://i.postimg.cc/cJ6j4WfR/f.png " },
+
   { title: "Firebase", img: " https://i.postimg.cc/d1vX9TXb/logo-vertical.png" },
 ];
 
 const otherSkills = [
-  { title: "Netlify", img: "https://i.postimg.cc/sfbbVtWY/netlify.png" },
+   
   { title: "Git", img: "https://i.postimg.cc/W3H67cVX/git.png" },
-  { title: "VSCode", img: "https://i.postimg.cc/TY8H8n8Q/vscode.png" },
+  { title: "Notion", img: "https://i.postimg.cc/gkDBVjDy/no.jpg " },
+  
   { title: "GitHub", img: "https://i.postimg.cc/0jKGWX2x/github.jpg" },
 ];
 
